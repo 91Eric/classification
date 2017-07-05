@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.5)
+PROJECT(caffeclassification)
+ if(COMMAND cmake_policy)
+      cmake_policy(SET CMP0003 NEW)
+ endif(COMMAND cmake_policy)
+MESSAGE (STATUS "This is top cmakefile for my caffe!")
+MESSAGE (STATUS "BIN: " ${PROJECT_SOURCE_DIR})
+ADD_SUBDIRECTORY(src bin)
